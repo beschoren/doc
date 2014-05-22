@@ -11,6 +11,7 @@ Quick Links
   * MdWiki markdown [quickguide](http://dynalon.github.io/mdwiki/#!quickstart.md)
   * [Software Development](software/software_development.md)
   * [Self-Development](self/self_development.md)
+  * [gerrit](gerrit.md)
   * Photography
   * Cycling
   * Books
