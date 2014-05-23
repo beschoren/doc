@@ -8,17 +8,20 @@ Before you begin, make sure your SSH keys match your email address on teamforge:
 ssh-keygen -t rsa -C "your_email@example.com"
 ```
 
+Coding
+------
 * write your code changes and commit locally.
 * push your changes to review using:
-  ```bash
-  git push origin HEAD:refs/for/master
-  ```
-  This will push it to the gerrit staging area, the place where the automated
-  tests and code reviews will happen.
+```bash
+git push origin HEAD:refs/for/master
+```
+This will push it to the gerrit staging area, the place where the automated
+tests and code reviews will happen.
 
 Review Phase
 ------------
-* Reviewers can set 'verified' status:
+
+Reviewers can set the  'verified' status:
 
 | value | meaning  | 
 |-------|----------|
@@ -26,7 +29,7 @@ Review Phase
 | 0     | No Score |
 | -1    | Fails    |
 
-* Reviewers can set 'code review' status: 
+Reviewers can set 'code review' status: 
 
 | value | meaning                   | comment                                       |
 |-------|---------------------------| ----------------------------------------------|
@@ -64,7 +67,6 @@ to pick one commit and squash other commits that have related changes. This
 will make life easier for all the reviewers that will look at your code.
 
 
-
 Approved Commits
 ----------------
 
@@ -86,7 +88,7 @@ Reworking Commits
 -----------------
 If you get feedback and want to rework your code:
 
-1. Rebase your working copy applying your commit to the top of the HEAD. You
+Rebase your working copy applying your commit to the top of the HEAD. You
 can find your change ID from your git log or get it from gerrit in the
 "Change-Id" attribute. 
 
@@ -96,8 +98,8 @@ Then run it like:
 ```bash
 git rebase <HASH>
 ```
-2. Edit your changes
-3. amend your commit locally with 
+
+Edit your changes and amend your commit locally with 
 ```bash
 git add .
 git commit --amend

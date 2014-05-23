@@ -12,5 +12,5 @@ Programming Languages
 
 SCM and Code Review
 -------------------
-* [gerrit](gerrit.md)
+* [gerrit](gerrit/gerrit.md)
 * git
